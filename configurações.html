@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>NorteConnect - Configurações</title>
+	<link rel="stylesheet" href="assets/css/configurações.css">
+	<link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+</head>
+<body>
+	<header>
+		<h1> <img src="assets/images/mascote.png" alt="Logo" class="logo">
+			Configurações</h1>
+		<nav>
+			<ul>
+				<li><a href="index.html">Inicio</a></li>
+				<li><a href="perfil.html">Perfil</a></li>
+				<li><a href="grupo.html">Grupos de interesse</a></li>
+				<li><a href="discussão.html">Discussões</a></li>
+				<li><a href="explorar.html">Explorar</a></li>
+				<li><a href="sobre.html">Sobre a região</a></li>
+				<li><a href="configurações.html"><strong>Configurações</strong></a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section>
+			<h2>Alterar senha</h2>
+			<form>
+				<label for="senha-atual">Senha atual:</label>
+				<input type="password" id="senha-atual" name="senha-atual" required>
+
+				<label for="nova-senha">Nova senha:</label>
+				<input type="password" id="nova-senha" name="nova-senha" required>
+
+				<label for="confirmar-senha">Confirmar senha:</label>
+				<input type="password" id="confirmar-senha" name="confirmar-senha" required>
+
+				<button type="submit">Alterar senha</button>
+			</form>
+		</section>
+		<section>
+			<h2>Preferências de idioma</h2>
+			<form>
+				<label for="idioma">Idioma preferido:</label>
+				<select id="idioma" name="idioma">
+					<option value="pt-br">Português (Brasil)</option>
+					<option value="en">English (United States)</option>
+					<option value="es">Español (España)</option>
+				</select>
+
+				<button type="submit">Salvar</button>
+			</form>
+		</section>
+		<section>
+			<h2>Excluir conta</h2>
+			<p>Tem certeza que deseja excluir sua conta? Essa ação não pode ser desfeita.</p>
+			<button class="btn-danger">Excluir conta</button>
+		</section>
+		<section>
+			<h2>Notificações</h2>
+			<div class="notificacoes">
+				<label>
+					<input type="checkbox" name="notificacoes" value="1" checked> Receber notificações por e-mail
+					<span class="checkmark"></span>
+				</label>
+				<label>
+					<input type="checkbox" name="notificacoes" value="2"> Receber notificações no celular
+					<span class="checkmark"></span>
+				</label>
+			</div>
+		</section>
+		<section>
+			<h2>Plano de assinatura</h2>
+			<div class="plano-assinatura">
+				<div class="plano">
+					<h3>Plano básico</h3>
+					<p>Assinatura mensal</p>
+					<p class="preco">R$ 9,99</p>
+					<button class="btn-assinar">Assinar</button>
+				</div>
+				<div class="plano">
+					<h3>Plano premium</h3>
+					<p>Assinatura mensal</p>
+					<p class="preco">R$ 19,99</p>
+					<button class="btn-assinar">Assinar</button>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer>
+		<p>Copyright &copy; 2023 NorteConnect</p>
+	</footer>
+</body>
+</html>

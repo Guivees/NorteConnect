@@ -1,0 +1,216 @@
+:root {
+	--cor-primaria: #008000; /* verde-escuro */
+	--cor-secundaria: #FFD700; /* dourado */
+	--cor-terciaria: #FFFFFF; /* branco */
+	--cor-de-fundo: #F0FFF0; /* verde-claro */
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    margin-right: 500px;
+    vertical-align: middle;
+  }
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--cor-de-fundo);
+  }
+  
+  header {
+    background-color: var(--cor-primaria);
+    color: var(--cor-terciaria);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+  }
+  
+  nav li {
+    margin-right: 20px;
+  }
+  
+  nav a {
+    color: var(--cor-terciaria);
+    text-decoration: none;
+    font-size: 1.2rem;
+  }
+
+main {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+section {
+	margin-bottom: 40px;
+}
+
+h2 {
+	font-size: 36px;
+	margin-bottom: 20px;
+	color: var(--cor-primaria);
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+}
+
+label {
+	font-weight: bold;
+	margin-bottom: 10px;
+	color: #333;
+}
+
+input[type="password"],
+select {
+	padding: 10px;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	margin-bottom: 20px;
+}
+
+button[type="submit"],
+button.btn-danger {
+	background-color: var(--cor-primaria);
+	color: #fff;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+button[type="submit"]:hover,
+button.btn-danger:hover {
+	background-color: var(--cor-secundaria);
+}
+
+.notificacoes label {
+	display: block;
+	position: relative;
+	padding-left: 35px;
+	margin-bottom: 10px;
+	cursor: pointer;
+	font-size: 16px;
+	user-select: none;
+}
+
+.notificacoes label input {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+}
+
+.notificacoes label .checkmark {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 20px;
+	width: 20px;
+	background-color: #fff;
+	border-radius: 50%;
+	border: 1px solid #ccc;
+}
+
+.notificacoes label:hover .checkmark {
+	background-color: #ccc;
+}
+
+.notificacoes label input:checked ~ .checkmark {
+	background-color: var(--cor-primaria);
+}
+
+.notificacoes label .checkmark:after {
+	content: "";
+	position: absolute;
+	display: none;
+}
+
+.notificacoes label input:checked ~ .checkmark:after {
+	display: block;
+}
+
+.notificacoes label .checkmark:after {
+	top: 5px;
+	left: 5px;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background: #fff;
+}
+
+.plano-assinatura {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.plano {
+	flex: 1;
+	background-color: #fff;
+	border-radius: 5px;
+	padding: 20px;
+	margin: 10px;
+	text-align: center;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.plano h3 {
+	font-size: 24px;
+	margin-bottom: 10px;
+	color: var(--cor-primaria);
+}
+
+.plano p {
+	font-size: 18px;
+	margin-bottom: 10px;
+}
+
+.plano .preco {
+	font-size: 36px;
+	font-weight: bold;
+	color: var(--cor-primaria);
+	margin-bottom: 20px;
+}
+
+.btn-assinar {
+	background-color: var(--cor-primaria);
+	color: #fff;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.btn-assinar:hover {
+	background-color: var(--cor-secundaria);
+}
+
+footer {
+	background-color: var(--cor-primaria);
+	color: #fff;
+	text-align: center;
+	padding: 20px;
+	margin-top: 40px;
+}

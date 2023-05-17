@@ -1,0 +1,138 @@
+:root {
+	--cor-primaria: #008000; /* verde-escuro */
+	--cor-secundaria: #FFD700; /* dourado */
+	--cor-terciaria: #FFFFFF; /* branco */
+	--cor-de-fundo: #F0FFF0; /* verde-claro */
+  }
+
+  .logo {
+    width: 100px;
+    height: 100px;
+    margin-right: 400px;
+    vertical-align: middle;
+  }
+  
+  * {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--cor-de-fundo);
+  }
+  
+  header {
+    background-color: var(--cor-primaria);
+    color: var(--cor-terciaria);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+  }
+  
+  nav li {
+    margin-right: 20px;
+  }
+  
+  nav a {
+    color: var(--cor-terciaria);
+    text-decoration: none;
+    font-size: 1.2rem;
+  }
+  
+  main {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 20px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+  }
+  
+  h2 {
+	margin-bottom: 20px;
+  }
+  
+  section {
+	margin-bottom: 40px;
+	flex: 1 1 300px;
+	background-color: var(--cor-terciaria);
+	border-radius: 10px;
+	padding: 20px;
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  section:last-child {
+	margin-right: 0;
+  }
+  
+  section h2 {
+	margin-top: 0;
+	color: var(--cor-primaria);
+	font-size: 1.5rem;
+	margin-bottom: 20px;
+  }
+  
+  section article {
+	margin-bottom: 20px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+  }
+  
+  p {
+	flex-grow: 1;
+  }
+  
+  h3 {
+	margin-top: 0;
+	color: var(--cor-primaria);
+	font-size: 1.2rem;
+  }
+  
+  button {
+	background-color: var(--cor-primaria);
+	color: var(--cor-terciaria);
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+	margin-top: 20px;
+  }
+  
+  button:hover {
+	background-color: var(--cor-secundaria);
+  }
+  
+  footer {
+	background-color: var(--cor-primaria);
+	color: var(--cor-terciaria);
+	padding: 20px;
+	text-align: center;
+	margin-top: 40px;
+  }
+
+  img{
+    width: 300px;
+    height: 130px;
+    margin-right: 20px;
+  }
+  
